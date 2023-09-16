@@ -7,8 +7,43 @@
   <style>
     #container{
       display: grid;
-      grid-template-columns: 3;
+      grid-template-columns: 200px 200px 200px ;
+      /* grid-template-columns : no of columns we want*/
+      grid-template-rows: 200px 200px;
+       /* grid-template-columns : no of rows we want*/
+      gap: 20px 30px;
+      /* gap- row gap/column gap */
     }
+
+    #container>div{
+      border: 1px solid red;
+    }
+
+    #container>div:nth-child(1)
+    {
+      background-color: pink;
+    }
+    #container>div:nth-child(2)
+    {
+      background-color: rgb(100, 212, 234);
+    }
+    #container>div:nth-child(3)
+    {
+      background-color: rgb(225, 58, 86);
+    }
+    #container>div:nth-child(4)
+    {
+      background-color: rgb(158, 153, 227);
+    }
+    #container>div:nth-child(5)
+    {
+      background-color: rgb(184, 231, 163);
+    }
+    #container>div:nth-child(6)
+    {
+      background-color: rgb(199, 226, 142);
+    }
+
   </style>
 </head>
 <body>
