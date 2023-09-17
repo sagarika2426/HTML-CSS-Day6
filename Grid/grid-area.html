@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #container{
+      border: 1px solid black;
+      display: grid;
+      grid-template-columns: 200px 200px 200px ;
+      /* grid-template-columns : no of columns we want*/
+      grid-template-rows: 200px 200px 200px;
+       /* grid-template-columns : no of rows we want*/
+      gap: 20px 30px;
+      /* gap- row gap/column gap */
+    }
+
+    #container>div{
+      border: 5px solid black;
+    }
+
+    #container>div:nth-child(1)
+    {
+      background-color: pink;
+      grid-area: 1/2/2/4;
+     
+    }
+    #container>div:nth-child(2)
+    {
+      background-color: rgb(100, 212, 234);
+      /* grid-area: 1/2/2/3; */
+      /* let's move this box to the 1st position */
+      /* grid-area: 1/1/2/2; */
+    
+    }
+    #container>div:nth-child(3)
+    {
+      background-color: rgb(225, 58, 86);
+    }
+    #container>div:nth-child(4)
+    {
+      background-color: rgb(158, 153, 227);
+      grid-area: 2/2/3/4;
+    }
+    #container>div:nth-child(5)
+    {
+      background-color: rgb(44, 106, 15);
+    }
+    #container>div:nth-child(6)
+    {
+      background-color: rgb(199, 226, 142);
+      /* grid-area: 1/3/2/4; */
+      grid-area: 3/2/3/4;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  
+</body>
+</html>
