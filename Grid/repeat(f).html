@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>repeat function</title>
+</head>
+<style>
+   #container{
+      border: 1px solid black;
+      display: grid;
+      /* grid-template-columns: 200px 200px 200px ; */
+      grid-template-columns: repeat(3, 1fr) ;
+      /* repeat(no.of column, size of columns ) */
+      
+      /* grid-template-rows: 200px 200px ;  */
+      grid-template-rows:  repeat(2, 200px) ; 
+      gap: 20px 30px;
+      
+    }
+
+    #container>div{
+      border: 5px solid black;
+    }
+
+    #container>div:nth-child(1)
+    {
+      background-color: pink;
+     
+     
+    }
+    #container>div:nth-child(2)
+    {
+      background-color: rgb(100, 212, 234);
+      
+    
+    }
+    #container>div:nth-child(3)
+    {
+      background-color: rgb(225, 58, 86);
+    }
+    #container>div:nth-child(4)
+    {
+      background-color: rgb(158, 153, 227);
+      
+    }
+    #container>div:nth-child(5)
+    {
+      background-color: rgb(44, 106, 15);
+    }
+    #container>div:nth-child(6)
+    {
+      background-color: rgb(199, 226, 142);
+      
+    }
+</style>
+
+<body>
+
+  <div id="container">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  
+</body>
+</html>
